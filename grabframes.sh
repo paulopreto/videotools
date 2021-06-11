@@ -1,5 +1,5 @@
 #!/bin/bash
-# Example to run -> ./grabframes.sh videoname.mp4 '[0,3,5,7,9]'
+# Example to run -> ./grabframes.sh videoname.mp4 [0,3,5,7,9]
 #
 # GRABFRAMES: v1.0 - Paulo Santiago 10-06-2021
 
