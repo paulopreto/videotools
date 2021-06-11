@@ -10,3 +10,4 @@ DIRNAME=`echo "$FILENAME" | cut -d'.' -f1`
 COMPLEMENTO="_cutbt"
 mkdir "$DIRNAME$COMPLEMENTO"
 ffmpeg -i $FILENAME -an -vf "select=between(n\,"$FRAMES"\,"$FRAMEE"),setpts=PTS-STARTPTS" "$DIRNAME$COMPLEMENTO"/"$DIRNAME"_"$FRAMES"_"$FRAMEE".mp4 -hide_banner
+echo "------------> !!!!!! Done !!!!!"

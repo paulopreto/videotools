@@ -7,6 +7,6 @@ for i in *.avi;
   do name=`echo "$i" | cut -d'.' -f1`
   echo "$name"
   mkdir encoded_mp4
-  ffmpeg -i "$i" -vcodec libx264 -acodec aac "./encoded_mp4/${name}.mp4" -hide_banner
-  echo "################ $name -------- !!!!!! Done !!!!!"
+  ffmpeg -i "$i" -vcodec libx264 -pix_fmt yuv420p -acodec aac "./encoded_mp4/${name}.mp4" -hide_banner
+  echo "$name ------------> !!!!!! Done !!!!!"
 done

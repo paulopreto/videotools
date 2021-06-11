@@ -12,3 +12,4 @@ printf '%s' "$FRAMES" |
 sed 's:\[\|\]::g; s:[, ]\+:\n:g' |
 xargs printf '%03d\n' |
 xargs -IFRAME ffmpeg -i "$FILENAME" -vf "select=eq(n\,FRAME)" -vframes 1 "$DIRNAME$COMPLEMENTO"/FRAME.png -hide_banner
+echo "------------> !!!!!! Done !!!!!"
