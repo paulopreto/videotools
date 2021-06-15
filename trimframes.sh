@@ -1,5 +1,5 @@
 #!/bin/bash
-# Example to run -> ./trimframes.sh videoname.mp4 5 10
+# Example to run -> ./trimframes.sh videoname.mp4 sincframe range_after_before_sinc
 #
 # TRIMFRAMES: v1.0 - Paulo Santiago 10-06-2021
 
