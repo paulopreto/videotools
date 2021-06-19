@@ -3,7 +3,14 @@
 #
 # COMPRESSX264: v1.0 - Paulo Santiago 10-06-2021
 
-for i in *.mp4;
+if [ -z $1 ]
+  then
+  EXTNAME=$"mp4"
+else
+  EXTNAME=$1
+fi
+
+for i in *."${EXTNAME}";
   do name=`echo "$i" | cut -d'.' -f1`
   echo "$name"
   mkdir compressed_x264
