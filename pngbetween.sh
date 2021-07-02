@@ -9,5 +9,5 @@ END=$3
 DIRNAME=`echo "$FILENAME" | cut -d'.' -f1`
 COMPLEMENTO="_png_${START}_${END}"
 mkdir "$DIRNAME$COMPLEMENTO"
-ffmpeg -i $FILENAME -vf select="between(n\,$START\,$END)" -vsync 0 "$DIRNAME$COMPLEMENTO"/%09d.png -hide_banner
+ffmpeg -i $FILENAME -vf select="between(n\,$START\,$END)" -vsync 0 "$DIRNAME$COMPLEMENTO"/%09d.png -loglevel quiet -nostats -hide_banner
 echo "------------> !!!!!! Done !!!!!"

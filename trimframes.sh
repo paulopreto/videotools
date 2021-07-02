@@ -11,5 +11,5 @@ FIM=$[$FRAMEKEY+RANGEFRAMES]
 DIRNAME=`echo "$FILENAME" | cut -d'.' -f1`
 COMPLEMENTO="_trim"
 mkdir "$DIRNAME$COMPLEMENTO"
-ffmpeg -i $FILENAME -vf select="between(n\,$INI\,$FIM)" -vsync 0 "$DIRNAME$COMPLEMENTO"/%09d.png -hide_banner
+ffmpeg -i $FILENAME -vf select="between(n\,$INI\,$FIM)" -vsync 0 "$DIRNAME$COMPLEMENTO"/%09d.png -loglevel quiet -nostats -hide_banner
 echo "------------> !!!!!! Done !!!!!"

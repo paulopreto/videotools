@@ -14,6 +14,6 @@ for i in *."${EXTNAME}";
   do name=`echo "$i" | cut -d'.' -f1`
   echo "$name"
   mkdir compressed_x264
-  ffmpeg -i "$i" -vcodec libx264 -pix_fmt yuv420p -acodec aac "./compressed_x264/${name}"_x264".mp4" -hide_banner
+  ffmpeg -i "$i" -vcodec libx264 -pix_fmt yuv420p -acodec aac "./compressed_x264/${name}"_x264".mp4" -loglevel quiet -nostats -hide_banner
   echo "$name ------------> !!!!!! Done !!!!!"
 done
