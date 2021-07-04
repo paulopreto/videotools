@@ -1,6 +1,9 @@
 #!/bin/bash
-# Example to run -> ./cutime.sh videoname.mp4 time_start time_end
-# ./cutime.sh videoname.mp4 00:00:17 00:00:56
+# Example to run -> ./cutime.sh videoname.mp4 time_start time_end 1
+# NO COMPRESSION
+# ./cutime.sh videoname.mp4 00:00:17 00:00:56 
+# WITH COMPRESSION X265
+# ./cutime.sh videoname.mp4 00:00:17 00:00:56 1
 #
 # CUTIME: v1.0 - Paulo Santiago 02-07-2021
 
