@@ -3,8 +3,7 @@
 #
 # COMPRESSX264: v1.0 - Paulo Santiago 10-06-2021
 
-if [ -z $1 ]
-  then
+if [ -z $1 ]; then
   EXTNAME=$"mp4"
 else
   EXTNAME=$1
