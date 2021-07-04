@@ -31,5 +31,3 @@ else
 	ffmpeg -f concat -i "${DIRNAME}/listvideo.txt" -c copy "${DIRNAME}/${DIRNAME}_concat".mp4 -loglevel quiet -nostats -hide_banner
 	echo -e "\n!!!!!! DONE !!!!!"
 fi
-
-
