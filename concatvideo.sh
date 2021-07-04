@@ -1,5 +1,6 @@
 #!/bin/bash
-# Example to run -> ./concatvideo.sh folder_name
+# Example to run --> ./concatvideo.sh folder_name
+# Example to run and compress x265 --> ./concatvideo.sh folder_name 1
 #
 # CONCATVIDEO: v1.0 - Paulo Santiago 02-07-2021
 
