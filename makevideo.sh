@@ -1,7 +1,7 @@
 #!/bin/bash
 # Example to run -> ./makevideo.sh 30 'img%09d'
 #
-# MAKEVIDEO: v1.0 - Paulo Santiago 10-06-202
+# MAKEVIDEO: v1.0 - Paulo Santiago 10-06-2021
 
 FPS=$1
 PATTERN=$2
